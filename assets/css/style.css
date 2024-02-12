@@ -1860,6 +1860,12 @@ html, body {
 
 .portfolio-item {
   overflow: hidden;
+  margin: 5px;
+  /* border: 1px solid #000; */
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2) /* Sombra hacia abajo y hacia la derecha */
 }
 
 .portfolio-item .portfolio-item-thumb {
