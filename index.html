@@ -1,765 +1,517 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Manna Leandro</title>
-
-    <!-- Description and Author
-    ================================================== -->
-    <meta name="description" content="Sitio web personal de Manna Leandro, desarrollador web. Aquí puedes encontrar información sobre mí, mi trabajo y cómo contactarme.">
-    <meta name="author" content="Manna Leandro Ariel">
-    <meta name="keywords" content="">
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
-
-    <!-- Favicon
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico">
-    <link rel="manifest" href="assets/img/manifest.json">
-    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Stylesheets
-    ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
-    <!-- Font Awesome core CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leandro Manna — Desarrollador & Técnico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <meta name="theme-color" content="#0a0f14">
 
 </head>
 <body>
 
-    <!-- Hero Section, Background Image change in css -->
-    <div id="top" class="hero background-overlay">
-    
-        <!-- Name & Description -->
-        <div class="hero-content">
-            <h1>Soy Leandro Manna</h1>
-            <p class="hero-job"><span>SOY UN DESARROLLADOR WEB CREATIVO</span></p>
-            <p class="hero-job-desc">ESTOY EN UN PUNTO DONDE EL CODIGO &amp; EL DISEÑO SE INTERSECTAN. </p>
+<!-- ══════════════════ NAVBAR ══════════════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">LM<span>.dev</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#skills">Stack</a></li>
+    <li><a href="#experience">Experiencia</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</nav>
 
-        </div><!-- /.hero-content -->
+<!-- ══════════════════ HERO ══════════════════ -->
+<section id="hero">
+  <div class="hero-orb"></div>
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <div class="hero-tag">Disponible para proyectos freelance</div>
+        <h1 class="hero-name">
+          Leandro<br>
+          <span class="line2">Manna</span>
+        </h1>
+        <div class="hero-typewriter">
+          &gt; <span id="typewriter"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-desc">
+          Desarrollador web y técnico en infraestructura con base en Jujuy, Argentina.
+          Construyo aplicaciones, automatizo procesos y mantengo sistemas de transmisión
+          para medios de comunicación.
+        </p>
+        <div class="hero-stats">
+          <div>
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-label">Años exp.</span>
+          </div>
+          <div>
+            <span class="stat-num" data-target="20">0</span>
+            <span class="stat-label">Proyectos</span>
+          </div>
+          <div>
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-label">En producción</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-yellow"></span>
+            <span class="t-dot t-green"></span>
+            <span class="terminal-title">leandro@dev ~ whoami</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="t-prompt">❯</span> <span class="t-cmd">cat perfil.json</span></div>
+            <div class="t-comment">{</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"nombre"</span>: <span class="t-val">"Leandro Manna"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"rol"</span>: <span class="t-val">"Dev & Tech"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"ubicacion"</span>: <span class="t-val">"Jujuy, AR"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"stack"</span>: [</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"Python"</span>, <span class="t-val">"Flask"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"MySQL"</span>, <span class="t-val">"Linux"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"FFmpeg"</span>, <span class="t-val">"Bootstrap"</span></div>
+            <div>&nbsp;&nbsp;],</div>
+            <div>&nbsp;&nbsp;<span class="t-key">"disponible"</span>: <span class="t-green">true</span></div>
+            <div class="t-comment">}</div>
+            <br>
+            <div><span class="t-prompt">❯</span> <span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="hero-arrow page-scroll home-arrow-down">
-            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-        </div><!-- /.hero-arrow -->
+<!-- ══════════════════ ABOUT ══════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-5 text-center text-md-start reveal">
+        <div class="about-photo-wrap d-inline-block">
+          <img src="img/foto-perfil.jpeg" alt="Leandro Manna" class="about-photo">
+        </div>
+      </div>
+      <div class="col-md-7 reveal reveal-delay-1">
+        <div class="section-label">// sobre mí</div>
+        <h2 class="section-title">Técnico.<br>Desarrollador.<br>Builder.</h2>
+        <div class="section-line"></div>
+        <div class="about-text">
+          <p>
+            Soy <strong>Leandro Manna</strong>, técnico en informática y desarrollador web con base en
+            San Salvador de Jujuy. Trabajo en <strong>Canal 4</strong>, donde me encargo de la infraestructura
+            de red, sistemas de streaming y desarrollo de herramientas internas para la operación diaria del canal.
+          </p>
+          <p>
+            Me especializo en construir aplicaciones web con Python y Flask, automatizar procesos con scripts,
+            y mantener servidores Linux en producción. También desarrollo proyectos personales: desde sistemas
+            de gestión hasta bots de Telegram integrados con IA.
+          </p>
+          <p>
+            Fuera del trabajo, gestiono proyectos propios — incluyendo plataformas web para clubes deportivos —
+            y sigo aprendiendo tecnologías nuevas de forma constante.
+          </p>
+        </div>
+        <div class="badge-stack">
+          <span class="badge-item">Jujuy, Argentina</span>
+          <span class="badge-item">Freelance disponible</span>
+          <span class="badge-item">Open to remote</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </div><!-- /.hero -->
-    <!-- End Hero -->
-
-    <!-- Header -->
-    <header id="masthead" class="site-header">
-        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                    <!-- Name -->
-                    <div class="page-scroll site-logo">
-                        <a href="#top">MANNA</a>
-                    </div>
-
-                </div><!-- /.navbar-header -->
-
-                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
-
-                    <!-- Navigation -->
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li class="page-scroll"><a href="#top">Home</a></li>
-                        <li class="page-scroll"><a href="#intro">Intro</a></li>
-                        <li class="page-scroll"><a href="#about">Acerca de</a></li>
-                        <li class="page-scroll"><a href="#services">Servicios</a></li>
-                        <li class="page-scroll"><a href="#works">Works</a></li>
-                        <li class="page-scroll"><a href="#contact">Contact</a></li>
-                        
-                    </ul><!-- /.navbar-nav -->
-
-                </div><!-- /.navbar-collapse -->
+<!-- ══════════════════ SKILLS ══════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 reveal">
+        <div class="section-label">// stack técnico</div>
+        <h2 class="section-title">Herramientas<br>& tecnologías</h2>
+        <div class="section-line"></div>
+        <p style="color: var(--muted); font-size:0.9rem; line-height:1.7;">
+          Acá está el stack con el que trabajo a diario. Algunas las uso en producción,
+          otras en proyectos personales. Siempre sumando nuevas herramientas.
+        </p>
+      </div>
+      <div class="col-lg-6 reveal reveal-delay-2">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="skill-group">
+              <div class="skill-group-title">// Desarrollo Web</div>
+              <div class="skill-items">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">Flask</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Bootstrap 5</span>
+                <span class="skill-pill">HTML5 / CSS3</span>
+                <span class="skill-pill">Jinja2</span>
+              </div>
             </div>
-        </nav><!-- /.primary-navigation -->
-    </header><!-- /#header -->
-    <!-- End Header -->
-
-    <!-- Main content -->
-    <main id="main" class="site-main">
-
-        <!-- Hello section -->
-		<section class="site-section section-hello" id="intro">
-			<div class="container">
-				<h2>BIENVENIDO A MI MUNDO DIGITAL</h2>
-				<p class="section-subtitle"><span>EXPLORE MI MUNDO</span></p>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="main-service text-right">
-							<div class="rectangle">
-								<i class="fa fa-calendar" aria-hidden="true"></i>
-							</div><!-- /.rectangle -->
-							<h3>Eficiencia en las Fechas Límite</h3>
-							<p>Su plazo es el valor más importante. Mi trabajo es asegurarme de que el trabajo se realice perfectamente antes de la fecha límite.</p>
-						</div><!-- /.main-service -->
-                        <div class="main-service text-right">
-                            <div class="rectangle">
-                                <i class="fa fa-comments" aria-hidden="true"></i>
-                            </div>
-                            <h3>La Comunicación es la Clave</h3>
-                            <p>Estoy disponible para revisar sus preguntas y recibir comentarios lo antes posible.</p>
-                        </div><!-- /.main-service -->
-					</div>
-					<div class="col-sm-4">
-                        <div class="big-rectangle">
-                            <img src="assets/img/manna-logo.png" alt="" class="img-responsive" style="max-width: 150px;">
-                        </div><!-- /.big-rectangle -->
-                    </div>                    
-					<div class="col-sm-4">
-                        <div class="main-service text-left">
-                            <div class="rectangle">
-                                <i class="fa fa-check" aria-hidden="true"></i>
-                            </div>
-                            <h3>Control de Calidad</h3>
-                            <p>Me aseguro de que su proyecto sea completamente funcional, compatible con todos los navegadores y cumpla con sus especificaciones.</p>
-                        </div><!-- /.main-service -->
-						<div class="main-service text-left">
-							<div class="rectangle">
-								<i class="fa fa-list" aria-hidden="true"></i>
-							</div><!-- /.rectangle -->
-							<h3>Arte Digital</h3>
-							<p>Creo productos y experiencias digitales impactantes que marcan la diferencia, empleando enfoque de diseño y habilidades creativas.</p>
-						</div><!-- /.main-service -->
-					</div>
-				</div>
-			</div>
-		</section><!-- /.section-hello -->
-        <!-- End Hello section -->
-
-        <!-- Quote section -->
-		<section class="section-background section-quote background-overlay text-center">
-			<div class="container">
-				<p>Doy a <span>mi trabajo</span> una apariencia <span>excepcional &amp; tengo experiencia</span> en la creación de identidades de marca para <span>impresión &amp; web</span>, marcando la diferencia.</p>
-			</div>
-		</section><!-- /.section-quote -->
-        <!-- End Quote section -->
-
-        <!-- About section -->
-        <section class="site-section section-about text-center" id="about">
-            <div class="container">
-                <h2>ACERCA DE MI TRABAJO</h2>
-                <p class="section-subtitle"><span>Mi objetivo es construir productos y servicios.</span></p>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-laptop" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>Web design</h3>
-                            <p>Mi enfoque para el diseño de sitios web es crear una plataforma que refleje la identidad de su empresa y, al mismo tiempo, asegure una experiencia intuitiva y sencilla para su audiencia.</p>
-                        </div><!-- /.feature-about -->
-                    </div>                    
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-code" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>Web development</h3>
-                            <p>Mi proceso de desarrollo web implica tomar los elementos gráficos definidos durante el diseño y convertirlos en un tema personalizado mediante codificación.</p>
-                        </div><!-- /.feature-about -->
-                    </div>                    
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>SEO OPTIMIZATION</h3>
-                            <p>Alcanza más allá de tus expectativas. Con mi ayuda, podrás superar tus límites como nunca antes. Asegúrate de estar entre los primeros resultados de búsqueda.</p>
-                        </div><!-- /.feature-about -->
-                    </div>                    
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>SOCIAL MEDIA</h3>
-                            <p>Es importante mantener su marca consistente y reconocible en todas las plataformas.</p>
-                        </div><!-- /.feature-about -->
-                    </div>
-                </div>
+          </div>
+          <div class="col-12">
+            <div class="skill-group">
+              <div class="skill-group-title">// Base de Datos & Backend</div>
+              <div class="skill-items">
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">phpMyAdmin</span>
+                <span class="skill-pill">XAMPP</span>
+                <span class="skill-pill">Gunicorn</span>
+                <span class="skill-pill">Nginx</span>
+                <span class="skill-pill">REST APIs</span>
+              </div>
             </div>
-        </section><!-- /.section-about -->
-        <!-- End About section -->
-
-        <!-- Services section -->
-        <section class="site-section section-services" id="services">
-
-            <div class="container-fluid">
-                <h2>MIS SERVICIOS</h2>
-                <p class="section-subtitle"><span>Nivel excepcional de servicio</span></p>
+          </div>
+          <div class="col-12">
+            <div class="skill-group">
+              <div class="skill-group-title">// Infraestructura & Sistemas</div>
+              <div class="skill-items">
+                <span class="skill-pill">Linux (Debian)</span>
+                <span class="skill-pill">FFmpeg</span>
+                <span class="skill-pill">Wowza</span>
+                <span class="skill-pill">Tailscale</span>
+                <span class="skill-pill">MikroTik</span>
+                <span class="skill-pill">UniFi</span>
+              </div>
             </div>
-
-            <div class="container">
-
-                <div class="carousel slide" id="services-carousel">
-
-                    <div class="item-controls text-center">
-                        <a href="#services-carousel" class="left btn carousel-control" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </a>
-                        <a href="#services-carousel" class="right btn carousel-control" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                    </div><!-- /.item-controls -->
-
-                    <div class="carousel-indicators nav-tabs text-center">
-                        <a data-target="#services-carousel" href="#" data-slide-to="0" class="active">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-laptop" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">Web design</p>
-                                </div>
-                            </div>
-                        </a><!-- /.item -->
-                        <a data-target="#services-carousel" href="#" data-slide-to="1">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-code" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">Web development</p>
-                                </div>
-                            </div>
-                        </a><!-- /.item -->
-                        <a data-target="#services-carousel" href="#" data-slide-to="2">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-mobile" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">Mobile Development</p>
-                                </div>
-                            </div>
-                        </a><!-- /.item -->
-                        <a data-target="#services-carousel" href="#" data-slide-to="3">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">SEO optimization</p>
-                                </div>
-                            </div>
-                        </a><!-- /.item -->
-                        <a data-target="#services-carousel" href="#" data-slide-to="4">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">Social Media</p>
-                                </div>
-                            </div>
-                        </a><!-- /.item -->
-                    </div><!-- /.carousel-indicators -->
-                        
-                           
-                    <div class="carousel-inner">
-                        <!-- Item 1 -->   
-                        <div id="item1" class="item tab-pane active">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">Web Design</h3>
-                                        <p>Las decoraciones no transmiten mensajes importantes. Lo hace el contenido. Al reducir el contenido basado en texto a un elemento de diseño visual, como la forma del texto, se puede generar expectativas exageradas e irrealistas por parte del cliente una vez que se reemplaza el contenido falso por datos reales. Me gusta que las decisiones de diseño sean guiadas por el contenido y los mensajes de la página, y a menudo encuentro inspiración en el contenido real para crear elementos interesantes que quizás no habrían surgido de otra manera</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/web-design.jpg" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div><!-- /.item -->
-                        <!-- Item 2 -->   
-                        <div id="item2" class="item tab-pane">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">Web Development</h3>
-                                        <p>Una vez que he creado un diseño único y he finalizado las texturas y gráficos a añadir, el siguiente paso es unirlo todo. Eso es lo que intento lograr en mi desarrollo web. Solo un sitio web diseñado profesionalmente puede justificar la singularidad de su idea, y este es un hecho entendido claramente. </p>
-
-                                        <p>Mientras que un buen diseño puede impresionar a los usuarios, son los códigos y el proceso de desarrollo los que aseguran que sus usuarios objetivos encuentren la experiencia de navegación igual de sorprendente que su diseño. </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/web-development.jpg" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div><!-- /.item -->
-                        <!-- Item 3 -->   
-                        <div id="item3" class="item tab-pane">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">Mobile Development</h3>
-                                        <p>Con la creciente importancia que se le da a los teléfonos inteligentes y las aplicaciones móviles, se ha vuelto inmensamente importante incluir el desarrollo de aplicaciones como parte de los servicios de diseño web. Soy conocido por proporcionar aplicaciones excelentes y extraordinarias que son únicas en todos los aspectos. Todas las aplicaciones desarrolladas por mí se basan en proporcionar características interesantes combinadas con una funcionalidad mejorada. Con una aplicación móvil en su lugar, puedes aumentar el alcance de tu marca y ampliar sus horizontes también. Puedes tener una aplicación profesional fácil de usar que brinde facilidad de funcionalidad y un atractivo sorprendente</p>                                     
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/mobile-development.jpg" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div><!-- /.item -->
-                        <!-- Item 4 -->   
-                        <div id="item4" class="item tab-pane">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">SEO optimization</h3>
-                                        <p>La optimización de motores de búsqueda (SEO) es el proceso de mejorar la visibilidad de un sitio web en los motores de búsqueda. Confío mucho en los motores de búsqueda para encontrar lo que necesito. Google recibe 34,000 búsquedas por segundo. Esas búsquedas incluyen encontrar productos, revisar marcas y buscar ubicaciones de negocios.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/seo-optimization.jpg" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div><!-- /.item -->
-                        <!-- Item 5 -->   
-                        <div id="item5" class="item tab-pane">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">Social Media</h3>
-                                        <p>Las redes sociales se han vuelto una herramienta esencial para el marketing de negocios en línea. Proporcionan una plataforma para interactuar e informar a las personas sobre uno mismo y su marca. Básicamente, el concepto de redes sociales se refiere a la tarea de promover sitios web o negocios a través de diversas plataformas de redes sociales...</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/social-media.jpg" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div><!-- /.item -->
-                    </div><!-- /.carousel-inner -->
-                </div><!-- /.carousel -->
+          </div>
+          <div class="col-12">
+            <div class="skill-group">
+              <div class="skill-group-title">// Herramientas & Automatización</div>
+              <div class="skill-items">
+                <span class="skill-pill">Git / GitHub</span>
+                <span class="skill-pill">Telegram Bot API</span>
+                <span class="skill-pill">Gemini API</span>
+                <span class="skill-pill">VS Code</span>
+                <span class="skill-pill">vMix</span>
+                <span class="skill-pill">Wowza Stream Engine</span>
+              </div>
             </div>
-        </section><!-- /.section-services -->
-        <!-- End Services section -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Portfolio/Works section --> 
-        <section class="site-section section-works" id="works">
-            <div class="container">
-                <h2>TRABAJOS RECIENTES</h2>
-                <p class="section-subtitle"><span>TE MUESTRO UN POCO DE MIS TRABAJOS</span></p>
+<!-- ══════════════════ EXPERIENCE ══════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 reveal">
+        <div class="section-label">// experiencia</div>
+        <h2 class="section-title">Trayectoria<br>profesional</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="col-lg-6 reveal reveal-delay-1">
+        <div class="timeline">
 
-                <div class="portfolio">
-                    <ul class="portfolio-sorting list-inline">
-                        <li><a href="#" class=" active" data-group="all">all</a></li>
-                        <li><a href="#" class="" data-group="webdesign">Web Design</a></li>
-                        <li><a href="#" class="" data-group="webdev">Web Development</a></li>
-                        <li><a href="#" class="" data-group="mobileapps">Mobile apps</a></li>
-                    </ul><!-- /.portfolio-sorting  -->
-
-                    <div id="grid">
-                        
-                        <!-- Portfolio item --> 
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-1.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem1">
-                                        <i class="fa fa-star"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Landing Page Template</h3>
-                                    <p>Web Development</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-2.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem2">
-                                        <i class="fa fa-star"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Website</h3>
-                                    <p>Web Design</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["mobileapps"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-4.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem3">
-                                        <i class="fa fa-star"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Android App</h3>
-                                    <p>Mobile App</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-3.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem4">
-                                        <i class="fa fa-star"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Back &amp; Front End</h3>
-                                    <p>Web Design</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-5.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem5">
-                                        <i class="fa fa-star"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>ReactJS Website</h3>
-                                    <p>Web Development</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["mobileapps"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-6.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem6">
-                                        <i class="fa fa-star"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Android App</h3>
-                                    <p>Mobile App</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-7.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem7">
-                                        <i class="fa fa-star"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Portafolio Website</h3>
-                                    <p>Web Development</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-8.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem8">
-                                        <i class="fa fa-star"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Back &amp; Front End</h3>
-                                    <p>Web Design</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-
-                    </div><!-- /#grid -->
-                </div>
+          <div class="timeline-item current">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020 — Presente</div>
+            <div class="timeline-role">Técnico en Infraestructura & Sistemas</div>
+            <div class="timeline-company">Canal 4 — San Salvador de Jujuy</div>
+            <div class="timeline-desc">
+              Administración de la red del canal (MikroTik, UniFi), servidores Linux,
+              sistemas de streaming en vivo (Wowza, FFmpeg, vMix), cámaras IP por VLAN
+              y desarrollo de herramientas internas para la operación de broadcast.
+              Gestión de automatizaciones con Python y bots de Telegram para monitoreo
+              de dispositivos en producción.
             </div>
-        </section><!-- /.section-works -->
-        <!-- End Works section --> 
-
-        <!-- Me section --> 
-        <section class="section-background section-me background-overlay text-center">
-            <div class="container page-scroll">
-                <h2>Te gustaron mis trabajos?</h2>
-                <p>Si deseas obtener más información sobre mi trabajo o discutir oportunidades de colaboración, estoy <span>a tu disposición para conversar</span>. Por favor, no dudes en <span>contactarme</span> a través del enlace a continuación. Espero tener noticias tuyas pronto.</p>
-                <a href="#contact" class="btn">CONTACTAME</a>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Linux</span>
+              <span class="timeline-tag">Wowza</span>
+              <span class="timeline-tag">FFmpeg</span>
+              <span class="timeline-tag">MikroTik</span>
+              <span class="timeline-tag">Python</span>
+              <span class="timeline-tag">Flask</span>
             </div>
-        </section><!-- /.section-me -->
-        <!-- End Me section -->
+          </div>
 
-        <!-- Contacts section --> 
-        <section class="site-section section-contact" id="contact">
-            <div class="container">
-                <h2>CONTACTAME</h2>
-                <p class="section-subtitle"><span>Aqui estoy...</span></p>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p>Puedes encontrarme en las siguientes redes: </p>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/leandro.manna" target="_blank" class="client">
-                                <img src="assets/img/facebook.png" class="img-responsive" alt="">
-                            </a>
-                            <a href="https://www.instagram.com/mannaleandro/" target="_blank" class="client">
-                                <img src="assets/img/instagram.png" class="img-responsive" alt="">
-                            </a>
-                            <a href="https://www.linkedin.com/in/leandro-manna-8ba809247/" target="_blank" class="client">
-                                <img src="assets/img/linkedin.png" class="img-responsive" alt="">
-                            </a>
-                            <a href="https://github.com/LeandroManna" target="_blank" class="client">
-                                <img src="assets/img/github.png" class="img-responsive" alt="">
-                            </a>
-                            <a href="mailto:leandromanna@gmail.com" target="_blank" class="client">
-                                <img src="assets/img/gmail.png" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018 — 2020</div>
+            <div class="timeline-role">Desarrollador Web Freelance</div>
+            <div class="timeline-company">Proyectos independientes — Jujuy</div>
+            <div class="timeline-desc">
+              Desarrollo de sitios web, sistemas de gestión y aplicaciones a medida para
+              clientes locales. Trabajo con PHP, MySQL y posteriormente migración
+              hacia Python/Flask como stack principal.
             </div>
-        </section><!-- /.section-contact-->
-        <!-- End Contacts section -->
-
-    </main><!-- /#main -->
-    <!-- End Main content -->
-
-    <!-- Footer --> 
-    <footer id="colophon" class="site-footer bg-info">
-
-        <hr class="border">
-
-        <div class="container-fluid">
-
-            <ul class="list-unstyled list-inline">
-                <li class="page-scroll"><a href="#top">Home</a></li>
-                <li class="page-scroll"><a href="#intro">Intro</a></li>
-                <li class="page-scroll"><a href="#about">Acerca de</a></li>
-                <li class="page-scroll"><a href="#services">Servicios</a></li>
-                <li class="page-scroll"><a href="#works">Works</a></li>
-                <li class="page-scroll"><a href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="page-scroll">
-                <a href="#top" class="rectangle">
-                    <i class="fa fa-angle-double-up"></i>
-                </a>
+            <div class="timeline-tags">
+              <span class="timeline-tag">PHP</span>
+              <span class="timeline-tag">MySQL</span>
+              <span class="timeline-tag">Bootstrap</span>
+              <span class="timeline-tag">JavaScript</span>
             </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2016 — 2018</div>
+            <div class="timeline-role">Técnico en Informática</div>
+            <div class="timeline-company">Servicio técnico independiente — Jujuy</div>
+            <div class="timeline-desc">
+              Soporte técnico de hardware y software, configuración de redes domésticas
+              y pequeñas empresas, instalación de sistemas operativos y mantenimiento de equipos.
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Redes</span>
+              <span class="timeline-tag">Hardware</span>
+              <span class="timeline-tag">Windows</span>
+              <span class="timeline-tag">Soporte</span>
+            </div>
+          </div>
 
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="container text-center">
-            <p class="copyright">&copy; Manna Leandro - 2024</p>
+<!-- ══════════════════ PROJECTS ══════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">// proyectos</div>
+    <div class="d-flex align-items-end justify-content-between mb-5">
+      <h2 class="section-title mb-0">Lo que<br>he construido</h2>
+      <a href="https://github.com/leandromanna" target="_blank" class="btn-outline-custom" style="font-size:0.72rem; padding: 0.6rem 1.25rem;">
+        <i class="bi bi-github me-1"></i> Ver todos
+      </a>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Proyecto 1 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="project-card">
+          <div class="project-num">01 /</div>
+          <div class="project-icon"><i class="bi bi-trophy"></i></div>
+          <div class="project-name">FutbolStats SaaS</div>
+          <div class="project-desc">
+            Plataforma multi-tenant para clubes de fútbol amateur. Dashboard con tablas de posiciones,
+            estadísticas por mitad, gestión de torneos y panel de superadmin. Desplegado en la nube.
+          </div>
+          <div class="project-stack">
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">Bootstrap 5</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Railway</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="bi bi-github"></i> Código</a>
+            <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+          </div>
         </div>
+      </div>
 
-    </footer><!-- /#footer -->
-    <!-- End Footer --> 
+      <!-- Proyecto 2 -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <div class="project-card">
+          <div class="project-num">02 /</div>
+          <div class="project-icon"><i class="bi bi-robot"></i></div>
+          <div class="project-name">Telegram Bot + IA</div>
+          <div class="project-desc">
+            Bot personal integrado con la API de Gemini para conversación con IA, historial persistente
+            y Google Search grounding. Multi-usuario con sesiones independientes.
+          </div>
+          <div class="project-stack">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Telegram API</span>
+            <span class="project-tag">Gemini API</span>
+            <span class="project-tag">Linux</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="bi bi-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- Modals -->
-    <div id="portfolioItem1" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-1.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Landing Page Interactiva para Argentina Programa</h4>
-                    <p>Este proyecto es una landing page diseñada para el trabajo final del programa Argentina Programa. La página incluye una galería de productos implementada con HTML, CSS, JavaScript y Bootstrap. Además, cuenta con una funcionalidad de inicio de sesión, la cual se ha desarrollado utilizando JavaScript en lugar de SQL. La interfaz ofrece una experiencia fluida y atractiva para los usuarios, y está diseñada para destacar los productos de manera efectiva.</p>
-                </div>
-                <!-- <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div> -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+      <!-- Proyecto 3 -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <div class="project-card">
+          <div class="project-num">03 /</div>
+          <div class="project-icon"><i class="bi bi-activity"></i></div>
+          <div class="project-name">Gimnasio Manager</div>
+          <div class="project-desc">
+            Sistema de gestión para gimnasios en PHP/MySQL. Módulo de socios, pagos, reservas
+            y reportes. Diseñado como template reutilizable y listo para comercialización.
+          </div>
+          <div class="project-stack">
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">Bootstrap 5</span>
+            <span class="project-tag">XAMPP</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="bi bi-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
 
-    <div id="portfolioItem2" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-2.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Explorador de Programación TV</h4>
-                    <p>Este Explorador de Programación TV es una aplicación web que ofrece una vista completa de la programación de canales de televisión en tiempo real. Desarrollada con HTML, CSS, JavaScript, Bootstrap, sh y XML, esta herramienta permite acceder fácilmente a la guía de programación de una variedad de canales. Simplifica tu experiencia televisiva con nuestro visualizador intuitivo y eficiente.</p>
-                </div>
-                <!-- <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div> -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+      <!-- Proyecto 4 -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <div class="project-card">
+          <div class="project-num">04 /</div>
+          <div class="project-icon"><i class="bi bi-broadcast"></i></div>
+          <div class="project-name">Radio Logger</div>
+          <div class="project-desc">
+            Sistema de grabación automática de streams de radio con Python + FFmpeg.
+            Interface web Flask para reproducción y descarga de grabaciones. Corriendo 24/7 en servidor Linux.
+          </div>
+          <div class="project-stack">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">FFmpeg</span>
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">Linux</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="bi bi-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
 
-    <div id="portfolioItem3" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-4.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">App de Gestión con Xamarin</h4>
-                    <p>Nuestra App de Gestión para Android, desarrollada con Xamarin, permite realizar operaciones CRUD utilizando SQLite y XML. Esta aplicación eficiente y fácil de usar ofrece una solución completa para la gestión de datos en dispositivos móviles.</p>
-                </div>
-                <!-- <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div> -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+      <!-- Proyecto 5 -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <div class="project-card">
+          <div class="project-num">05 /</div>
+          <div class="project-icon"><i class="bi bi-cloud-sun"></i></div>
+          <div class="project-name">Weather Pipeline</div>
+          <div class="project-desc">
+            Pipeline de datos meteorológicos para Jujuy. Consume la API de Meteosource,
+            procesa y genera JSON listo para gráficos en broadcast (Flowics) de Canal 4.
+          </div>
+          <div class="project-stack">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Meteosource API</span>
+            <span class="project-tag">JSON</span>
+            <span class="project-tag">Flowics</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="bi bi-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
 
-    <div id="portfolioItem4" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-3.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Gestión de Gimnasio con CRUD</h4>
-                    <p>Desarrolle un sistema completo de gestión de gimnasios con HTML, CSS, JS, Bootstrap, FontAwesome, PHP y SQL. Este proyecto responsive ofrece funcionalidades de CRUD y distingue entre logins de clientes y administradores para una experiencia de usuario personalizada.</p>
-                </div>
-                <!-- <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div> -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+      <!-- Proyecto 6 -->
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+        <div class="project-card">
+          <div class="project-num">06 /</div>
+          <div class="project-icon"><i class="bi bi-diagram-3"></i></div>
+          <div class="project-name">Network Dashboard</div>
+          <div class="project-desc">
+            Visualizador de topología de red generado desde exports de draw.io.
+            Dashboard web con estado de dispositivos, VLANs y métricas de red en tiempo real.
+          </div>
+          <div class="project-stack">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">draw.io XML</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="bi bi-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
 
-    <div id="portfolioItem5" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-5.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Carteleras de Cine con ReactJS y Vite</h4>
-                    <p>Utilizando ReactJS con Vite, cree una aplicación que muestra las carteleras de cine más recientes mediante una API. Esta aplicación moderna y eficiente ofrece una experiencia dinámica y actualizada para los amantes del cine.</p>
-                </div>
-                <!-- <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div> -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    </div>
+  </div>
+</section>
 
-    <div id="portfolioItem6" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-6.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">App de Citas para Barbería y Estética</h4>
-                    <p>Esta aplicación, creada con Dart y SQLite, ofrece una solución completa para la gestión de citas en barberías y centros de estética. Desde programación de citas hasta generación de informes, permite un control eficiente de la agenda y proporciona datos detallados sobre la carga de trabajo de cada empleado para optimizar la atención al cliente.</p>
-                </div>
-                <!-- <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div> -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 reveal">
+        <div class="section-label">// contacto</div>
+        <h2 class="section-title">¿Hablamos?</h2>
+        <div class="section-line"></div>
+        <p style="color: var(--muted); font-size:0.9rem; line-height:1.7; margin-bottom:2rem;">
+          Estoy disponible para proyectos freelance, consultoría técnica y colaboraciones.
+          Si tenés un proyecto en mente o necesitás ayuda con algún sistema, escribime.
+        </p>
 
-    <div id="portfolioItem7" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-7.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Sitio Web de Estudio de Arquitectura</h4>
-                    <p>Este sitio web, construido con HTML, CSS, JavaScript y Bootstrap, es la carta de presentación digital de un estudio de arquitectura. Muestra de manera destacada los proyectos más relevantes, ofreciendo una experiencia visual atractiva y fácil navegación para los visitantes interesados en conocer el trabajo y la filosofía del estudio.</p>
-                </div>
-                <!-- <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div> -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+        <a href="mailto:leandromanna@gmail.com" class="contact-info-item">
+          <i class="bi bi-envelope contact-info-icon"></i>
+          <div>
+            <span class="contact-info-label">Email</span>
+            <span class="contact-info-val">leandromanna@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://github.com/leandromanna" target="_blank" class="contact-info-item">
+          <i class="bi bi-github contact-info-icon"></i>
+          <div>
+            <span class="contact-info-label">GitHub</span>
+            <span class="contact-info-val">github.com/leandromanna</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/leandromanna" target="_blank" class="contact-info-item">
+          <i class="bi bi-linkedin contact-info-icon"></i>
+          <div>
+            <span class="contact-info-label">LinkedIn</span>
+            <span class="contact-info-val">linkedin.com/in/leandromanna</span>
+          </div>
+        </a>
+      </div>
 
-    <div id="portfolioItem8" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-8.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Sitio Web de Confirmación de Asistencia para Casamientos</h4>
-                    <p>Este sitio web ofrece una plataforma para que los invitados confirmen su asistencia al casamiento y descarguen la tarjeta de invitación. Desarrollado con HTML, CSS, JavaScript, PHP y SQL, brinda una experiencia interactiva y práctica para los invitados y facilita la gestión de la lista de asistentes para los organizadores del evento.</p>
-                </div>
-                <!-- <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div> -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+      <div class="col-lg-0 offset-lg-1 reveal reveal-delay-2 d-none">
+        <div class="contact-form-wrap">
+          <div class="section-label mb-3">// enviar mensaje</div>
+          <form id="contactForm" action="https://formspree.io/f/TUCODIGO" method="POST">
+            <div class="mb-3">
+              <label class="form-label-custom">Nombre</label>
+              <input type="text" name="nombre" class="form-control-custom" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label-custom">Email</label>
+              <input type="email" name="email" class="form-control-custom" placeholder="tu@email.com" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label-custom">Asunto</label>
+              <input type="text" name="asunto" class="form-control-custom" placeholder="Proyecto / Consulta">
+            </div>
+            <div class="mb-4">
+              <label class="form-label-custom">Mensaje</label>
+              <textarea name="mensaje" class="form-control-custom" rows="5" placeholder="Contame de qué se trata..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary-custom w-100" style="text-align:center;">
+              Enviar mensaje <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+            <div id="form-success" style="display:none; margin-top:1rem; font-family: var(--mono); font-size:0.8rem; color: var(--green); text-align:center;">
+              ✓ Mensaje enviado. Te respondo pronto.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery core js | Do not Delete -->
-    <script src="assets/js/jquery.min.js"></script>
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="container">
+    <span>Leandro Manna</span> &nbsp;·&nbsp; <span>leandromanna.com</span> &nbsp;·&nbsp; Jujuy, Argentina &nbsp;·&nbsp; <span>&copy;</span> <span id="year"></span>
+    <br><br>
+    <span style="color: var(--border);">Hecho con HTML, CSS, JS y Bootstrap 5. Desplegado en Netlify.</span>
+  </div>
+</footer>
 
-    <!-- Bootstrap core js | Do not Delete -->
-    <script src="assets/js/bootstrap.min.js"></script>
+<!-- ══════════════════ SCRIPTS ══════════════════ -->
+<script src="js/main.js"></script>
 
-    <!-- Bootstrap progressbar JS -->
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
-
-    <!-- Count To JS -->
-    <script src="assets/js/jquery.countTo.min.js"></script>
-
-    <!-- Easing JS -->
-    <script src="assets/js/jquery.easing.min.js"></script>
-
-    <!-- Shuffle JS -->
-    <script src="assets/js/jquery.shuffle.min.js"></script>
-
-    <!-- Slick Carousel JS -->
-    <script src="assets/js/slick.min.js"></script>
-
-    <!-- Touchswipe JS -->
-    <script src="assets/js/touchswipe.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
-  
 </body>
 </html>
